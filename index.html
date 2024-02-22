@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW Experience</title>
+    <style>
+        body {
+            font-family: "Roboto", sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url("images/BMW-M-Hybrid-V8-Wallpaper-4-scaled-jpg.webp") no-repeat center center fixed;
+            background-size: cover;
+            color: #ffffff;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+            border-radius: 10px;
+        }
+
+        h1, h2, p {
+            color: #fff;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+
+        .tab {
+            cursor: pointer;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #000;
+            border: none;
+            outline: none;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            border-radius: 5px;
+        }
+
+        .tab:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+        }
+
+        .content {
+            display: none;
+        }
+
+        #moteur, #partie-cycle, #performance {
+            display: block;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #ffffff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            left: 0;
+            right: 0;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>BMW Experience</h1>
+        <p>Discover the car experience</p>
+    </header>
+
+    <section>
+        <div class="tabs">
+            <button class="tab" onclick="showContent('moteur')">Engine</button>
+            <button class="tab" onclick="showContent('partie-cycle')">Chassis</button>
+            <button class="tab" onclick="showContent('performance')">Performance</button>
+        </div>
+
+        <div id="moteur" class="content">
+            <h2>BMW Engines</h2>
+            <p>BMW is renowned for its exceptional engineering and performance, and at the heart of this automotive prowess are its remarkable engines. BMW engines are a testament to precision and innovation, blending power and efficiency seamlessly. From the iconic inline-six cylinders to the high-revving M series powerhouses, BMW engines deliver a driving experience that is both exhilarating and refined.</p>
+            <img src="images/bmw_m760li_xdrive_73.jpg"BMW Engine">
+        </div>
+
+        <div id="partie-cycle" class="content">
+            <h2>BMW Chassis</h2>
+            <p>The chassis or "cycle parts" of a motorcycle plays a pivotal role in defining its character, performance, and overall riding experience. It encompasses a complex system of components working in harmony to provide stability, handling, and responsiveness.</p>
+            <img src="images/bmw-efficientdynamics-lightweight-carbon.jpg" alt="BMW Chassis">
+        </div>
+
+        <div id="performance" class="content">
+            <h2>BMW Performance</h2>
+            <p>BMW is synonymous with high-performance vehicles that effortlessly blend power, precision, and cutting-edge technology. From the exhilarating acceleration of their sports cars to the commanding performance of their SUVs, BMW consistently raises the bar in the automotive world.</p>
+            <img src="images/Capture d’écran 2024-02-18 à 19.43.59.png"BMW Performance">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 BMW Experience. By Adnane NOURBHAY</p>
+    </footer>
+
+    <script>
+        function showContent(tabId) {
+            const tabs = ['moteur', 'partie-cycle', 'performance'];
+            tabs.forEach(tab => {
+                const content = document.getElementById(tab);
+                content.style.display = (tab === tabId) ? 'block' : 'none';
+            });
+        }
+    </script>
+
+</body>
+</html>
