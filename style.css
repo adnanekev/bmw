@@ -1,0 +1,97 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url("images/BMW-M-Hybrid-V8-Wallpaper-4-scaled-jpg.webp") no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+
+
+h1, h2, p {
+    color: #fff;
+}
+
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.tab {
+    cursor: pointer;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+}
+
+.tab:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+}
+
+
+.content {
+    display: none;
+}
+
+
+#moteur, #partie-cycle, #performance {
+    display: block;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
